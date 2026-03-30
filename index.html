@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PakNews — Breaking News & Latest Updates</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<!-- ✅ External CSS file -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<!-- ══════════════ TICKER ══════════════ -->
+<div class="ticker-bar">
+  <div class="ticker-label">Breaking News</div>
+  <div class="ticker-track-wrap">
+    <div class="ticker-track">
+      <span>پاکستان میں معاشی اصلاحات کا نیا منصوبہ جاری</span>
+      <span>وزیراعظم کا اہم قومی خطاب آج رات</span>
+      <span>کراچی میں موسلادھار بارش، نظام درہم برہم</span>
+      <span>سٹاک مارکیٹ میں تاریخی اضافہ</span>
+      <span>پاک-بھارت سرحد پر کشیدگی میں کمی</span>
+      <span>عالمی سطح پر تیل کی قیمتوں میں کمی</span>
+    </div>
+  </div>
+</div>
+ 
+<!-- ══════════════ HEADER ══════════════ -->
+<header>
+  <a class="logo" href="#"><span>Pak</span>News</a>
+  <div class="header-actions">
+    <span class="search-icon">🔍</span>
+    <button class="btn-subscribe">Subscribe</button>
+  </div>
+</header>
+ 
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <a href="#" class="active">Home</a>
+  <a href="#">Pakistan</a>
+  <a href="#">World</a>
+  <a href="#">Politics</a>
+  <a href="#">Business</a>
+  <a href="#">Technology</a>
+  <a href="#">Sports</a>
+  <a href="#">Health</a>
+  <a href="#">Entertainment</a>
+  <a href="#">Opinion</a>
+  <a href="#">Weather</a>
+</nav>
+ 
+<!-- ══════════════ HERO ══════════════ -->
+<div class="hero">
+  <div class="hero-grid">
+    <!-- Main hero story -->
+    <div class="hero-main" onclick="openArticle()">
+      <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80" alt="Hero">
+      <div class="hero-main-text">
+        <span class="hero-cat">Breaking</span>
+        <h1>وزیراعظم نے قومی اقتصادی پالیسی کا تاریخی اعلان کر دیا</h1>
+        <p>حکومت نے ملک بھر میں سرمایہ کاری کو فروغ دینے کے لیے نئی پالیسی کا اعلان کیا جس سے لاکھوں نوکریاں پیدا ہونے کی توقع ہے۔</p>
+        <div class="hero-meta">احمد رضا &nbsp;·&nbsp; 2 گھنٹے قبل</div>
+      </div>
+    </div>
+    <!-- Sidebar stories -->
+    <div class="hero-sidebar">
+      <div class="hero-side-item" onclick="openArticle()">
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=70" alt="">
+        <div class="hero-side-text">
+          <span class="cat-tag">Business</span>
+          <h3>پاکستانی روپے کی قدر میں استحکام</h3>
+        </div>
+      </div>
+      <div class="hero-side-item" onclick="openArticle()">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=500&q=70" alt="">
+        <div class="hero-side-text">
+          <span class="cat-tag">Sports</span>
+          <h3>پاکستان نے ٹیسٹ سیریز جیت لی</h3>
+        </div>
+      </div>
+      <div class="hero-side-item" onclick="openArticle()">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=70" alt="">
+        <div class="hero-side-text">
+          <span class="cat-tag">Technology</span>
+          <h3>AI کا نیا دور: پاکستان میں ٹیک اسٹارٹ اپس کا اضافہ</h3>
+        </div>
+      </div>
+      <div class="hero-side-item" onclick="openArticle()">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=70" alt="">
+        <div class="hero-side-text">
+          <span class="cat-tag">World</span>
+          <h3>مشرق وسطیٰ میں امن مذاکرات دوبارہ شروع</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ══════════════ CATEGORY STRIP ══════════════ -->
+<div class="category-strip">
+  <div class="category-strip-inner">
+    <div class="section-header">
+      <div class="section-tag"></div>
+      <h2>Categories</h2>
+    </div>
+    <div class="category-grid">
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&q=60" alt="">
+        <div class="cat-tile-name">Pakistan</div>
+      </div>
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=300&q=60" alt="">
+        <div class="cat-tile-name">World</div>
+      </div>
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&q=60" alt="">
+        <div class="cat-tile-name">Business</div>
+      </div>
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&q=60" alt="">
+        <div class="cat-tile-name">Tech</div>
+      </div>
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=300&q=60" alt="">
+        <div class="cat-tile-name">Sports</div>
+      </div>
+      <div class="cat-tile">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=300&q=60" alt="">
+        <div class="cat-tile-name">Opinion</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ══════════════ MAIN CONTENT + SIDEBAR ══════════════ -->
+<div class="content-wrap">
+ 
+  <!-- Top Stories -->
+  <div class="section-header">
+    <div class="section-tag"></div>
+    <h2>Top Stories</h2>
+    <a class="view-all" href="#">View All →</a>
+  </div>
+  <div class="news-grid">
+    <div class="news-card" onclick="openArticle()">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=70" alt="">
+      <div class="news-card-body">
+        <span class="news-card-cat">Politics</span>
+        <h3>قومی اسمبلی میں بجٹ پر بحث مباحثہ جاری</h3>
+        <p>حزبِ اختلاف نے بجٹ میں ترامیم کا مطالبہ کرتے ہوئے واک آؤٹ کیا۔</p>
+        <div class="news-card-meta">
+          <span class="author">فاطمہ علی</span>
+          <span>·</span>
+          <span>3 گھنٹے قبل</span>
+        </div>
+      </div>
+    </div>
+    <div class="news-card" onclick="openArticle()">
+      <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=70" alt="">
+      <div class="news-card-body">
+        <span class="news-card-cat">Economy</span>
+        <h3>غیر ملکی سرمایہ کاری میں 40 فیصد اضافہ</h3>
+        <p>اسٹیٹ بینک کی رپورٹ کے مطابق رواں سال سرمایہ کاری ریکارڈ بلندی پر۔</p>
+        <div class="news-card-meta">
+          <span class="author">عمر شیخ</span>
+          <span>·</span>
+          <span>5 گھنٹے قبل</span>
+        </div>
+      </div>
+    </div>
+    <div class="news-card" onclick="openArticle()">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=70" alt="">
+      <div class="news-card-body">
+        <span class="news-card-cat">Technology</span>
+        <h3>پاکستان میں 5G نیٹ ورک کی توسیع کا آغاز</h3>
+        <p>بڑے شہروں میں 5G سروس اگلے 6 ماہ میں دستیاب ہو گی۔</p>
+        <div class="news-card-meta">
+          <span class="author">سارہ خان</span>
+          <span>·</span>
+          <span>6 گھنٹے قبل</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="main-sidebar-layout">
+    <!-- Main column -->
+    <div>
+      <div class="section-header">
+        <div class="section-tag"></div>
+        <h2>Featured</h2>
+        <a class="view-all" href="#">View All →</a>
+      </div>
+      <div class="featured-row">
+        <div class="featured-big" onclick="openArticle()">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=75" alt="">
+          <div class="featured-big-body">
+            <span class="news-card-cat">World</span>
+            <h2>عالمی موسمیاتی تبدیلی کانفرنس — پاکستان کا موقف</h2>
+            <p>پاکستان نے ترقی یافتہ ممالک سے موسمیاتی فنڈ میں اضافے کا مطالبہ کیا اور اپنے گرین انیشیٹیو پیش کیے۔</p>
+          </div>
+        </div>
+        <div class="article-list">
+          <div class="article-list-item" onclick="openArticle()">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=200&q=60" alt="">
+            <div class="article-list-text">
+              <span class="cat">Sports</span>
+              <h4>پاکستان اور آسٹریلیا کے درمیان ون ڈے سیریز</h4>
+              <span class="time">4 گھنٹے قبل</span>
+            </div>
+          </div>
+          <div class="article-list-item" onclick="openArticle()">
+            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=200&q=60" alt="">
+            <div class="article-list-text">
+              <span class="cat">Health</span>
+              <h4>پاکستان میں ڈینگی کیسز میں خطرناک اضافہ</h4>
+              <span class="time">7 گھنٹے قبل</span>
+            </div>
+          </div>
+          <div class="article-list-item" onclick="openArticle()">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&q=60" alt="">
+            <div class="article-list-text">
+              <span class="cat">Technology</span>
+              <h4>نئی اے آئی ٹیکنالوجی تعلیم کا چہرہ بدل رہی ہے</h4>
+              <span class="time">8 گھنٹے قبل</span>
+            </div>
+          </div>
+          <div class="article-list-item" onclick="openArticle()">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=200&q=60" alt="">
+            <div class="article-list-text">
+              <span class="cat">Environment</span>
+              <h4>لاہور اسموگ: حکومت کا ایمرجنسی اجلاس</h4>
+              <span class="time">10 گھنٹے قبل</span>
+            </div>
+          </div>
+          <div class="article-list-item" onclick="openArticle()">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=200&q=60" alt="">
+            <div class="article-list-text">
+              <span class="cat">World</span>
+              <h4>اقوام متحدہ کی قرارداد پر ووٹنگ آج ہوگی</h4>
+              <span class="time">12 گھنٹے قبل</span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Latest News -->
+      <div class="section-header">
+        <div class="section-tag"></div>
+        <h2>Latest News</h2>
+        <a class="view-all" href="#">View All →</a>
+      </div>
+      <div class="news-grid">
+        <div class="news-card" onclick="openArticle()">
+          <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=500&q=70" alt="">
+          <div class="news-card-body">
+            <span class="news-card-cat">Health</span>
+            <h3>نئی ویکسین پاکستان میں دستیاب ہو گئی</h3>
+            <p>وزارتِ صحت نے بچوں کی نئی ویکسین کے پروگرام کا آغاز کر دیا۔</p>
+            <div class="news-card-meta"><span class="author">ڈاکٹر نادیہ</span><span>·</span><span>1 گھنٹہ قبل</span></div>
+          </div>
+        </div>
+        <div class="news-card" onclick="openArticle()">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&q=70" alt="">
+          <div class="news-card-body">
+            <span class="news-card-cat">Education</span>
+            <h3>یونیورسٹیوں میں داخلہ پالیسی تبدیل</h3>
+            <p>اعلیٰ تعلیمی کمیشن نے میرٹ پالیسی میں اہم ترمیم کا اعلان کیا۔</p>
+            <div class="news-card-meta"><span class="author">زینب مرزا</span><span>·</span><span>2 گھنٹے قبل</span></div>
+          </div>
+        </div>
+        <div class="news-card" onclick="openArticle()">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=500&q=70" alt="">
+          <div class="news-card-body">
+            <span class="news-card-cat">Environment</span>
+            <h3>کراچی ساحل پر صفائی مہم کامیاب</h3>
+            <p>ہزاروں رضاکاروں نے ساحل سمندر سے ٹنوں کوڑا اٹھایا۔</p>
+            <div class="news-card-meta"><span class="author">علی حسن</span><span>·</span><span>4 گھنٹے قبل</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <!-- Trending -->
+      <div class="sidebar-widget">
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-title">🔥 Trending Now</div>
+        <ul class="trending-list">
+          <li>
+            <span class="trending-num">01</span>
+            <div class="trending-text"><h4>وزیراعظم کی اقتصادی پالیسی</h4><span>85k reads</span></div>
+          </li>
+          <li>
+            <span class="trending-num">02</span>
+            <div class="trending-text"><h4>پاکستان کرکٹ ٹیم کی جیت</h4><span>62k reads</span></div>
+          </li>
+          <li>
+            <span class="trending-num">03</span>
+            <div class="trending-text"><h4>لاہور اسموگ ایمرجنسی</h4><span>54k reads</span></div>
+          </li>
+          <li>
+            <span class="trending-num">04</span>
+            <div class="trending-text"><h4>5G نیٹ ورک کا آغاز</h4><span>41k reads</span></div>
+          </li>
+          <li>
+            <span class="trending-num">05</span>
+            <div class="trending-text"><h4>غیر ملکی سرمایہ کاری ریکارڈ</h4><span>33k reads</span></div>
+          </li>
+        </ul>
+      </div>
+ 
+      <!-- Weather -->
+      <div class="sidebar-widget">
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-title">🌤 Weather</div>
+        <div class="weather-box">
+          <div class="weather-city">Lahore, Pakistan</div>
+          <div class="weather-temp">28°</div>
+          <div class="weather-desc">Partly Cloudy</div>
+          <div class="weather-row">
+            <span>💧 Humidity: 65%</span>
+            <span>💨 Wind: 12 km/h</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Newsletter -->
+      <div class="sidebar-widget">
+        <div class="sidebar-divider"></div>
+        <div class="newsletter-box">
+          <h3>Stay Informed</h3>
+          <p>روزانہ کی اہم خبریں اپنی ای میل پر پائیں</p>
+          <input class="newsletter-input" type="email" placeholder="آپ کی ای میل">
+          <button class="newsletter-btn">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ══════════════ VIDEO SECTION ══════════════ -->
+<div class="video-strip">
+  <div class="video-strip-inner">
+    <div class="section-header">
+      <div class="section-tag"></div>
+      <h2 style="color:white">📹 Video</h2>
+      <a class="view-all" href="#" style="color:#c8102e">View All →</a>
+    </div>
+    <div class="video-grid">
+      <div class="video-thumb">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=60" alt="">
+        <div class="play-btn">▶</div>
+        <div class="video-title">وزیراعظم کا خطاب — مکمل ویڈیو</div>
+        <div class="video-dur">18:45</div>
+      </div>
+      <div class="video-thumb">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400&q=60" alt="">
+        <div class="play-btn">▶</div>
+        <div class="video-title">پاکستان بمقابلہ آسٹریلیا ہائی لائٹس</div>
+        <div class="video-dur">6:22</div>
+      </div>
+      <div class="video-thumb">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=400&q=60" alt="">
+        <div class="play-btn">▶</div>
+        <div class="video-title">لاہور اسموگ — زمینی رپورٹ</div>
+        <div class="video-dur">4:58</div>
+      </div>
+      <div class="video-thumb">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=60" alt="">
+        <div class="play-btn">▶</div>
+        <div class="video-title">5G ٹیکنالوجی: پاکستان کا مستقبل</div>
+        <div class="video-dur">9:11</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><span>Pak</span>News</div>
+    <div class="footer-tagline">Pakistan's Most Trusted News Source — Since 2005</div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="#">Pakistan</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Technology</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Live TV</a>
+        <a href="#">Podcasts</a>
+        <a href="#">Newsletter</a>
+        <a href="#">RSS Feed</a>
+        <a href="#">Archives</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Advertise</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter / X</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 PakNews. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Use · Cookie Settings</span>
+    </div>
+  </div>
+</footer>
+ 
+<!-- ══════════════ ARTICLE OVERLAY ══════════════ -->
+<div class="article-overlay" id="articleOverlay">
+  <button class="article-close" onclick="closeArticle()">✕</button>
+  <div class="article-page">
+    <span class="cat-tag">Breaking News</span>
+    <h1>وزیراعظم نے قومی اقتصادی پالیسی کا تاریخی اعلان کر دیا</h1>
+    <p class="article-deck">حکومت نے ملک بھر میں سرمایہ کاری کو فروغ دینے کے لیے ایک جامع پالیسی متعارف کروائی ہے جس سے اگلے پانچ سالوں میں بیس لاکھ نئی نوکریاں پیدا ہوں گی۔</p>
+    <div class="article-byline">
+      <div class="byline-avatar">ا</div>
+      <div class="byline-info">
+        <strong>احمد رضا — سینئر رپورٹر</strong>
+        اتوار، 16 مارچ 2025 &nbsp;·&nbsp; 8 منٹ پڑھنا
+      </div>
+      <div class="share-bar">
+        <button class="share-btn">📘 Share</button>
+        <button class="share-btn">🐦 Tweet</button>
+        <button class="share-btn">🔗 Copy</button>
+      </div>
+    </div>
+    <img class="article-hero-img" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80" alt="">
+    <p class="article-img-caption">اسلام آباد — وزیراعظم قومی اسمبلی میں پالیسی کا اعلان کرتے ہوئے۔ (PakNews / فوٹو بیورو)</p>
+    <div class="article-body">
+      <p>اسلام آباد — وزیراعظم نے آج قومی اسمبلی میں ایک تاریخی اقتصادی پالیسی کا اعلان کیا جسے ملک کی تاریخ میں سب سے جامع اقتصادی اصلاحات کا پیکیج قرار دیا جا رہا ہے۔</p>
+      <div class="pull-quote">
+        <p>"یہ پاکستان کی معاشی تاریخ کا اہم ترین دن ہے۔ ہم نے آج ایک نئے پاکستان کی بنیاد رکھی ہے۔"</p>
+      </div>
+      <h2>اہم نکات</h2>
+      <p>نئی پالیسی میں سب سے نمایاں پہلو یہ ہے کہ غیر ملکی سرمایہ کاروں کو اگلے دس سال کے لیے ٹیکس میں خصوصی رعایت دی جائے گی۔</p>
+      <h2>عالمی ردعمل</h2>
+      <p>امریکہ، چین اور سعودی عرب نے اس پالیسی کا خیرمقدم کیا ہے اور نئی سرمایہ کاری کی یقین دہانی کروائی ہے۔</p>
+    </div>
+    <div class="article-tags">
+      <span class="article-tag">وزیراعظم</span>
+      <span class="article-tag">معیشت</span>
+      <span class="article-tag">سرمایہ کاری</span>
+      <span class="article-tag">پاکستان</span>
+      <span class="article-tag">Budget</span>
+      <span class="article-tag">CPEC</span>
+    </div>
+  </div>
+</div>
+ 
+<!-- ✅ External JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
+ 
